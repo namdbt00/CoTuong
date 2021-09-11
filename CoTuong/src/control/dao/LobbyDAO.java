@@ -5,13 +5,20 @@
  */
 package control.dao;
 
+import java.util.List;
+
 /**
  *
  * @author PhanToan
  */
 public class LobbyDAO extends DAO{
+    private static List<Integer> playersInLobby;
     public LobbyDAO(){
         super();
+    }
+    
+    public static void joinLobby(int playerId){
+        playersInLobby.add(playerId);
     }
 }
 

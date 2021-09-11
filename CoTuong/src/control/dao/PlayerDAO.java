@@ -14,6 +14,7 @@ import model.Player;
  * @author PhanToan
  */
 public class PlayerDAO extends DAO{
+    
     public PlayerDAO(){
         super();
     }
