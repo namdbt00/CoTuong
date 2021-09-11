@@ -16,12 +16,21 @@ public class Player {
     private String name;
     private int age;
     private int rankPoint;
+    private int winMatch;
     private int totalMatch;
     private int status;
     private int lobbyId;
     private int gameId;
     private int rankId;
     private int roomId;
+
+    public int getWinMatch() {
+        return winMatch;
+    }
+
+    public void setWinMatch(int winMatch) {
+        this.winMatch = winMatch;
+    }
     
     public Player(){
         

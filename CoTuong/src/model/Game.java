@@ -9,6 +9,7 @@ package model;
  *
  * @author PhanToan
  */
+
 public class Game {
     private int id;
     
