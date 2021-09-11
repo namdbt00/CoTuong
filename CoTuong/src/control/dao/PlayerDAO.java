@@ -43,7 +43,7 @@ public class PlayerDAO extends DAO{
     }
     
     public Player getPlayerById(int playerId){  
-        return session.createQuery("from Player where id = " + playerId);
+        return (Player) session.createQuery("from Player where id = " + playerId);
     }
     public HashMap<Player,Double> calculateWinRate(int rankId){
         ArrayList<Player> players = (ArrayList<Player>)session.createQuery("from Player where rankId = " + rankId).list();
